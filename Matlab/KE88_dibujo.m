@@ -10,9 +10,9 @@ x = x(:); % Aseguramos que sea un vector columna
 % ---------- Parámetros de ajuste del modelo STL ----------
 % Si el modelo se ve "de cabeza" o el frente apunta a otro lado, se ajusta aquí.
 ESCALA_STL       = 0.0017;
-ROLL_OFFSET_DEG  = 180;   % Corrige que el dron vuele de espaldas
+ROLL_OFFSET_DEG  = 90;   % Corrige que el dron vuele de espaldas
 PITCH_OFFSET_DEG = 0;     
-YAW_OFFSET_DEG   = 90;    % Corrige el frente del dron
+YAW_OFFSET_DEG   = 0;    % Corrige el frente del dron
 
 if isempty(ax) || ~isgraphics(ax)
     % 1. Crear ventana gráfica limpia
@@ -122,7 +122,10 @@ end
 set(tr, 'XData', X(1,:), 'YData', X(2,:), 'ZData', max(X(3,:), 0));
  
 % Hacer que la cámara siga al dron dinámicamente con margen de seguridad
-axis(ax, [pos(1)-1.5 pos(1)+1.5, pos(2)-1.5 pos(2)+1.5, 0 max(2, pos(3)+1)]);
+margen = 1.5;
+axis(ax, [pos(1)-margen, pos(1)+margen, ... % Rango X
+          pos(2)-margen, pos(2)+margen, ... % Rango Y
+          pos(3)-margen, pos(3)+margen]);   % Rango Z (Sigue dinámicamente al dron)
 title(ax, sprintf('KE88 en vivo (STL)  |  Altura Z = %.2f m', pos(3)));
 
 drawnow limitrate
