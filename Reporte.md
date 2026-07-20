@@ -41,4 +41,18 @@ Es la forma de representar de situaciones reales que mediande relaciones análog
 · Analogia  
 tipo de relacion que tienen dos o mas cosas que son similares en alguno de sus componentes
 
+# Día 5. 
 
+# Día 6.
+
+# Día 7. Visita a Nuclea Solutions
+
+# Día 8. Visita de Nacho a Ceti (HYDRA)
+
+# Día 9. Clase de teoría 
+
+En este día se vierón las bases matemáticas de las funciones, diferenciales y derivadas.
+
+# Día 10. Clase de teoría
+
+Este día continuamos con las derivadas y temas de vibraciones como el concepto de posición, velocidad y aceleración. 
