@@ -13,8 +13,8 @@ set(f,'KeyPressFcn',@tecla,'KeyReleaseFcn',@suelta);
 refresca();
 
     function tecla(~,e)
-        paso_gas = 1.0;    % Cuánto sube/baja el gas por pulsación (%)
-        paso_maniobra = 20; % Porcentaje de inclinación al pulsar una flecha (%)
+        paso_gas = 2.0;    % Cuánto sube/baja el gas por pulsación (%)
+        paso_maniobra = 100; % Porcentaje de inclinación al pulsar una flecha (%)
 
         switch e.Key
             % --- THROTTLE (0% a 100%) ---
@@ -22,12 +22,13 @@ refresca();
             case 's',          CMD(1) = max(0,   CMD(1) - paso_gas);
 
                 % --- PITCH (Eje longitudinal: Flechas Arriba/Abajo) ---
-            case 'uparrow',    CMD(3) =  paso_maniobra;
-            case 'downarrow',  CMD(3) = -paso_maniobra;
+            case 'uparrow',    CMD(3) = min(100, CMD(3) + paso_gas);
+            case 'downarrow',  CMD(3) = max(-100, CMD(3) - paso_gas);
 
                 % --- ROLL (Eje lateral: Flechas Derecha/Izquierda) ---
-            case 'rightarrow', CMD(2) =  paso_maniobra;
-            case 'leftarrow',  CMD(2) = -paso_maniobra;
+            case 'rightarrow', CMD(2) = min(100, CMD(2) + paso_gas);
+            case 'leftarrow',  CMD(2) = max(-100, CMD(2) - paso_gas);
+%% 
 
                 % --- YAW (Giro sobre eje Z: A/D) ---
             case 'a',          CMD(4) = -paso_maniobra;
@@ -35,7 +36,7 @@ refresca();
 
                 % --- UTILIDADES ---
             case 'space',      CMD(2:4) = 0; % Nivelar mandos (Roll, Pitch, Yaw a 0%)
-            case 'r',          CMD(1) = 47.4; % Resetear gas a hover (47.4%)
+            case 'r',          CMD(1) = 50; % Resetear gas a hover (50%)
         end
         refresca();
     end
