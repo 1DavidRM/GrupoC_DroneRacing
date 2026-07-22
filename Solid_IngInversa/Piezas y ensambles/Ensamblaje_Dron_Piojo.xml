@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="07/21/26||19:42:07" using="Simscape Multibody Link Version 7.4" from="SolidWorks 33.4.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Ensamblaje_Dron_Piojo" uid="Ensamblaje_Dron_Piojo" version="133">
+<AssemblyFile name="Ensamblaje_Dron_Piojo.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Eje Helices-1" uid="Eje Helices-1" entityUid="Eje Helices*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.054522151613165731 0.015602687776150466 1.0065000000000071</Translation>
+</Transform>
+</Instance>
+<Instance name="Helice-2" uid="Helice-2" entityUid="Helice*:*Predeterminado">
+<Transform>
+<Rotation>0.90772216384722937 1.6403014670492242e-15 -0.41957177366989756 2.1808047012562221e-15 -1 8.0859418243469122e-16 -0.41957177366989756 -1.6489829574876236e-15 -0.90772216384722937</Rotation>
+<Translation>0.061197151613165704 0.014502687776150469 1.0065000000000071</Translation>
+</Transform>
+</Instance>
+<Instance name="Helice-5" uid="Helice-5" entityUid="Helice*:*Predeterminado">
+<Transform>
+<Rotation>-0.82453313637297043 0 0.56581366811252709 0 -1 0 0.56581366811252709 0 0.82453313637297043</Rotation>
+<Translation>-0.092453694427704305 0.014302687776150465 1.0059205058334475</Translation>
+</Transform>
+</Instance>
+<Instance name="Helice-6" uid="Helice-6" entityUid="Helice*:*Predeterminado">
+<Transform>
+<Rotation>0.90772216384722948 0 -0.41957177366989734 0 -1 -1.2120385097179398e-16 -0.41957177366989734 1.1737359874828888e-16 -0.90772216384722948</Rotation>
+<Translation>-0.07915409871792059 0.014502687776150464 1.0070794941665662</Translation>
+</Transform>
+</Instance>
+<Instance name="DronPiojo-1" uid="DronPiojo-1" grounded="true" entityUid="DronPiojo*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.015640872479823292 -0.010087312223849535 1.1291640003778363</Translation>
+</Transform>
+</Instance>
+<Instance name="Ensamblaje_Helices-1" uid="Ensamblaje_Helices-1" entityUid="Ensamblaje_Helices" rigid="true">
+<Transform>
+<Rotation>-0.19401319385419427 0 0.98099891978049347 0 1 0 -0.98099891978049347 0 -0.19401319385419427</Rotation>
+<Translation>-1.0703241373934615 0.014703900200203726 1.3400834626228761</Translation>
+</Transform>
+<Instance name="Helice-2" uid="Helice-2" entityUid="Helice*:*Predeterminado">
+<Transform>
+<Rotation>0.90772216384722948 1.6403014670492245e-15 -0.41957177366989767 2.1808047012562221e-15 -1 8.0859418243469122e-16 -0.41957177366989767 -1.6489829574876238e-15 -0.90772216384722948</Rotation>
+<Translation>0.0062223255237427999 -0.000201212424054905 1.0035000000000074</Translation>
+</Transform>
+</Instance>
+<Instance name="Helice-1" uid="Helice-1" entityUid="Helice*:*Predeterminado">
+<Transform>
+<Rotation>-0.88095268772902224 0 0.47320435541424555 0 -1 0 0.47320435541424555 0 0.88095268772902224</Rotation>
+<Translation>-0.0071276744762571731 -0.000401212424053261 1.0035000000000074</Translation>
+</Transform>
+</Instance>
+<Instance name="Eje Helices-1" uid="Eje Helices-1" grounded="true" entityUid="Eje Helices*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.00045267447625763069 0.00089878757594673807 1.0035000000000074</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Helice-1" uid="Helice-1" entityUid="Helice*:*Predeterminado">
+<Transform>
+<Rotation>-0.88095268772902224 0 0.47320435541424555 0 -1 0 0.47320435541424555 0 0.88095268772902224</Rotation>
+<Translation>0.047847151613165675 0.014302687776150467 1.0065000000000071</Translation>
+</Transform>
+</Instance>
+<Instance name="Helice-3" uid="Helice-3" entityUid="Helice*:*Predeterminado">
+<Transform>
+<Rotation>-0.88095268772902224 0 0.47320435541424555 0 -1 0 0.47320435541424555 0 0.88095268772902224</Rotation>
+<Translation>0.047847151613165703 0.014302687776150467 1.1458352957624118</Translation>
+</Transform>
+</Instance>
+<Instance name="Eje Helices-2" uid="Eje Helices-2" entityUid="Eje Helices*:*Predeterminado">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.054522151613165787 0.015602687776150466 1.1458352957624118</Translation>
+</Transform>
+</Instance>
+<Instance name="Helice-4" uid="Helice-4" entityUid="Helice*:*Predeterminado">
+<Transform>
+<Rotation>0.90772216384722937 1.6403014670492242e-15 -0.41957177366989756 2.1808047012562221e-15 -1 8.0859418243469122e-16 -0.41957177366989756 -1.6489829574876236e-15 -0.90772216384722937</Rotation>
+<Translation>0.061197151613165739 0.01450268777615046 1.1458352957624118</Translation>
+</Transform>
+</Instance>
+<Instance name="Eje Helices-3" uid="Eje Helices-3" entityUid="Eje Helices*:*Predeterminado">
+<Transform>
+<Rotation>0.99622439773660354 0 -0.086815605477021315 0 1 0 0.086815605477021315 0 0.99622439773660354</Rotation>
+<Translation>-0.085803896572812399 0.015602687776150464 1.0065000000000068</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concéntrica1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Helice-1</Uid>
+</InstancePath>
+<Position>0 0.0011000000000000003 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eje Helices-1</Uid>
+</InstancePath>
+<Position>-0.0066750000000000004 0.0013019999999999993 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concéntrica2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eje Helices-1</Uid>
+</InstancePath>
+<Position>0.0066749999999999934 0.0013019999999999993 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Helice-2</Uid>
+</InstancePath>
+<Position>0 0.0011000000000000003 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Helice-1</Uid>
+</InstancePath>
+<Position>-0.00064088647898735696 0.0011000000000000003 0.0025497623307009221</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eje Helices-1</Uid>
+</InstancePath>
+<Position>0.0066749999999999934 -0.0023999999999999994 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincidente2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eje Helices-1</Uid>
+</InstancePath>
+<Position>-0.0066750000000000004 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Helice-2</Uid>
+</InstancePath>
+<Position>-0.00064088647898735696 -0.0011000000000000003 0.0025497623307010331</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Helice-3</Uid>
+</InstancePath>
+<Position>0 0.0011000000000000003 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eje Helices-2</Uid>
+</InstancePath>
+<Position>-0.0066750000000000004 0.0013019999999999993 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concéntrica4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eje Helices-2</Uid>
+</InstancePath>
+<Position>0.0066749999999999934 0.0013019999999999993 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Helice-4</Uid>
+</InstancePath>
+<Position>0 0.0011000000000000003 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Helice-3</Uid>
+</InstancePath>
+<Position>-0.00064088647898730144 0.0011000000000000003 0.0025497623307009221</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eje Helices-2</Uid>
+</InstancePath>
+<Position>0.0066749999999999934 -0.0023999999999999994 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincidente4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eje Helices-2</Uid>
+</InstancePath>
+<Position>-0.0066750000000000004 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Helice-4</Uid>
+</InstancePath>
+<Position>-0.00064088647898730144 -0.0011000000000000003 0.0025497623307009221</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Helice-5</Uid>
+</InstancePath>
+<Position>0 0.0011000000000000003 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eje Helices-3</Uid>
+</InstancePath>
+<Position>-0.0066750000000000004 0.0013020000000000011 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concéntrica6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eje Helices-3</Uid>
+</InstancePath>
+<Position>0.0066750000000000004 0.0013020000000000011 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Helice-6</Uid>
+</InstancePath>
+<Position>0 0.0011000000000000003 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Helice-5</Uid>
+</InstancePath>
+<Position>-0.00064088647898741247 0.0011000000000000003 0.0025497623307010331</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eje Helices-3</Uid>
+</InstancePath>
+<Position>0.0066750000000000004 -0.0023999999999999994 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincidente6">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eje Helices-3</Uid>
+</InstancePath>
+<Position>-0.0066750000000000004 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Helice-6</Uid>
+</InstancePath>
+<Position>-0.00064088647898724593 -0.0011000000000000003 0.002549762330700811</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>DronPiojo-1</Uid>
+</InstancePath>
+<Position>-0.070163024092989079 0.019220000000000001 0.016671295384575568</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Ensamblaje_Helices-1</Uid>
+<Uid>Eje Helices-1</Uid>
+</InstancePath>
+<Position>0 0.00030000000000000165 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente8">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>DronPiojo-1</Uid>
+</InstancePath>
+<Position>-0.070163024092989079 0.019220000000000001 0.016671295384575568</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Ensamblaje_Helices-1</Uid>
+<Uid>Eje Helices-1</Uid>
+</InstancePath>
+<Position>0 -0.0064700000000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica8">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>DronPiojo-1</Uid>
+</InstancePath>
+<Position>0.070163024092989079 0.019220000000000001 0.016671295384575568</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eje Helices-2</Uid>
+</InstancePath>
+<Position>0 0.00029999999999999992 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente9">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>DronPiojo-1</Uid>
+</InstancePath>
+<Position>0.070163024092989079 0.019220000000000001 0.016671295384575568</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eje Helices-2</Uid>
+</InstancePath>
+<Position>0 -0.0064700000000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica9">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>DronPiojo-1</Uid>
+</InstancePath>
+<Position>0.070163024092989024 0.019220000000000001 -0.12266400037782921</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eje Helices-1</Uid>
+</InstancePath>
+<Position>0 0.0070700000000000016 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>DronPiojo-1</Uid>
+</InstancePath>
+<Position>0.070163024092989024 0.019220000000000001 -0.12266400037782921</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eje Helices-1</Uid>
+</InstancePath>
+<Position>0 -0.0064700000000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concéntrica10">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>DronPiojo-1</Uid>
+</InstancePath>
+<Position>-0.070163024092989135 0.019220000000000001 -0.12266400037782921</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Eje Helices-3</Uid>
+</InstancePath>
+<Position>0 0.0070700000000000034 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincidente11">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>DronPiojo-1</Uid>
+</InstancePath>
+<Position>-0.070163024092989135 0.019220000000000001 -0.12266400037782921</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Eje Helices-3</Uid>
+</InstancePath>
+<Position>0 -0.0064700000000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="Ensamblaje_Helices" uid="Ensamblaje_Helices" version="156">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="Ensamblaje_Helices.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="DronPiojo" uid="DronPiojo*:*Predeterminado" version="211">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="DronPiojo.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.14014093883889436</Mass>
+<CenterOfMass>0 0.0067398452749487751 -0.051919226472110905</CenterOfMass>
+<Inertia>0.00016675570369098969 0.00029638399455692428 0.00013801587213950575 -9.2491331722092954e-08 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="DronPiojo_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Eje Helices" uid="Eje Helices*:*Predeterminado" version="328">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Eje Helices.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00032937014272798123</Mass>
+<CenterOfMass>0 -0.0015311025987424377 0</CenterOfMass>
+<Inertia>2.5338395850300086e-09 1.0264933278091974e-08 1.0395331424570768e-08 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Eje Helices_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Helice" uid="Helice*:*Predeterminado" version="405">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Helice.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00036938306493591145</Mass>
+<CenterOfMass>0.00052706456414497828 -0.00012009310714093256 0.017318357335781152</CenterOfMass>
+<Inertia>7.2145680262858603e-08 7.5067887952965807e-08 3.1580440177815886e-09 6.1162408699850155e-10 -4.2218241941129888e-10 3.6027596304922505e-10</Inertia>
+</MassProperties>
+<GeometryFile name="Helice_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
