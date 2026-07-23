@@ -1,0 +1,36 @@
+Constrained Instances: 'Helice-3', 'Helice-4'
+Constraint Name: Bloquear1
+Error Details: Constraint is not supported. The constraint has been exported as unknown constraint.
+---------------------------------------------------------------------------------
+Constrained Instances: 'Helice-3', 'Helice-4'
+Constraint Name: Bloquear1
+Error Details: Constraint geometry is not supported. The constraint geometry has been exported as unknown geometry.
+---------------------------------------------------------------------------------
+Constrained Instances: 'Helice-3', 'Helice-4'
+Constraint Name: Bloquear1
+Error Details: Constraint geometry is not supported. The constraint geometry has been exported as unknown geometry.
+---------------------------------------------------------------------------------
+Constrained Instances: 'Helice-5', 'Helice-6'
+Constraint Name: Bloquear2
+Error Details: Constraint is not supported. The constraint has been exported as unknown constraint.
+---------------------------------------------------------------------------------
+Constrained Instances: 'Helice-5', 'Helice-6'
+Constraint Name: Bloquear2
+Error Details: Constraint geometry is not supported. The constraint geometry has been exported as unknown geometry.
+---------------------------------------------------------------------------------
+Constrained Instances: 'Helice-5', 'Helice-6'
+Constraint Name: Bloquear2
+Error Details: Constraint geometry is not supported. The constraint geometry has been exported as unknown geometry.
+---------------------------------------------------------------------------------
+Constrained Instances: 'Helice-1', 'Helice-2'
+Constraint Name: Bloquear3
+Error Details: Constraint is not supported. The constraint has been exported as unknown constraint.
+---------------------------------------------------------------------------------
+Constrained Instances: 'Helice-1', 'Helice-2'
+Constraint Name: Bloquear3
+Error Details: Constraint geometry is not supported. The constraint geometry has been exported as unknown geometry.
+---------------------------------------------------------------------------------
+Constrained Instances: 'Helice-1', 'Helice-2'
+Constraint Name: Bloquear3
+Error Details: Constraint geometry is not supported. The constraint geometry has been exported as unknown geometry.
+---------------------------------------------------------------------------------

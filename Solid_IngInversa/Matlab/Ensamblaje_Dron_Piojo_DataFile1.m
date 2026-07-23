@@ -52,7 +52,7 @@ smiData.RigidTransform(7).axis = [-0.57735026918962584 -0.57735026918962584 -0.5
 smiData.RigidTransform(7).ID = "B[DronPiojo-1:-:Eje Helices-2]";
 
 %%Rotation Method - Arbitrary Axis
-smiData.RigidTransform(8).translation = [-2.2132307838689977e-13 -6.4699999999999989 5.6296244451275282e-14];  % mm
+smiData.RigidTransform(8).translation = [-7.1054273576010019e-15 -6.4699999999999989 2.2737367544323206e-13];  % mm
 smiData.RigidTransform(8).angle = 2.0943951023931953;  % rad
 smiData.RigidTransform(8).axis = [-0.57735026918962584 -0.57735026918962584 -0.57735026918962584];
 smiData.RigidTransform(8).ID = "F[DronPiojo-1:-:Eje Helices-2]";
@@ -64,21 +64,21 @@ smiData.RigidTransform(9).axis = [0.57735026918962584 -0.57735026918962584 0.577
 smiData.RigidTransform(9).ID = "B[Helice-3:-:Eje Helices-2]";
 
 %%Rotation Method - Arbitrary Axis
-smiData.RigidTransform(10).translation = [-6.6749999999999901 -2.4000000000000021 -4.1922021409845911e-13];  % mm
-smiData.RigidTransform(10).angle = 2.0943951023931957;  % rad
-smiData.RigidTransform(10).axis = [-0.57735026918962584 -0.57735026918962573 -0.57735026918962573];
+smiData.RigidTransform(10).translation = [-6.6750000000000895 -2.3999999999999986 0];  % mm
+smiData.RigidTransform(10).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(10).axis = [-0.57735026918962584 -0.57735026918962584 -0.57735026918962584];
 smiData.RigidTransform(10).ID = "F[Helice-3:-:Eje Helices-2]";
 
 %%Rotation Method - Arbitrary Axis
-smiData.RigidTransform(11).translation = [6.6749999999999865 1.3019999999999994 0];  % mm
+smiData.RigidTransform(11).translation = [6.6749999999999936 1.3019999999999994 0];  % mm
 smiData.RigidTransform(11).angle = 2.0943951023931953;  % rad
 smiData.RigidTransform(11).axis = [0.57735026918962584 -0.57735026918962584 0.57735026918962584];
 smiData.RigidTransform(11).ID = "B[Eje Helices-2:-:Helice-4]";
 
 %%Rotation Method - Arbitrary Axis
-smiData.RigidTransform(12).translation = [3.6373104677416137e-13 -2.4019999999999975 3.3721433683977175e-13];  % mm
-smiData.RigidTransform(12).angle = 2.0943951023931944;  % rad
-smiData.RigidTransform(12).axis = [-0.57735026918962562 -0.57735026918962662 -0.57735026918962506];
+smiData.RigidTransform(12).translation = [5.0386570165123632e-14 -2.4020000000000055 -1.892641408757073e-14];  % mm
+smiData.RigidTransform(12).angle = 2.0943951023931948;  % rad
+smiData.RigidTransform(12).axis = [-0.57735026918962551 -0.57735026918962673 -0.57735026918962495];
 smiData.RigidTransform(12).ID = "F[Eje Helices-2:-:Helice-4]";
 
 %%Rotation Method - Arbitrary Axis
@@ -124,28 +124,28 @@ smiData.RigidTransform(19).axis = [-0.57735026918962584 -0.57735026918962584 -0.
 smiData.RigidTransform(19).ID = "B[DronPiojo-1:-:Ensamblaje_Helices-1]";
 
 %%Rotation Method - Arbitrary Axis
-smiData.RigidTransform(20).translation = [-0.45267447625724344 -5.5712124240532628 1003.5000000000114];  % mm
-smiData.RigidTransform(20).angle = 2.0943951023931957;  % rad
-smiData.RigidTransform(20).axis = [-0.57735026918962584 -0.57735026918962573 -0.57735026918962573];
+smiData.RigidTransform(20).translation = [-0.45267447625815294 -5.5712124240532592 1003.5000000000091];  % mm
+smiData.RigidTransform(20).angle = 2.0943951023931953;  % rad
+smiData.RigidTransform(20).axis = [-0.57735026918962584 -0.57735026918962584 -0.57735026918962584];
 smiData.RigidTransform(20).ID = "F[DronPiojo-1:-:Ensamblaje_Helices-1]";
 
 %%Rotation Method - Arbitrary Axis
-smiData.RigidTransform(21).translation = [6.2223255237427448 -0.201212424054905 1003.5000000000078];  % mm
+smiData.RigidTransform(21).translation = [6.2223255237427999 -0.201212424054905 1003.5000000000074];  % mm
 smiData.RigidTransform(21).angle = 3.1415926535897918;  % rad
-smiData.RigidTransform(21).axis = [-0.97665811926365242 -9.7810740855417071e-16 0.21479971619251578];
+smiData.RigidTransform(21).axis = [-0.97665811926365242 -9.781074085541711e-16 0.21479971619251584];
 smiData.RigidTransform(21).ID = "AssemblyGround[Ensamblaje_Helices-1:Helice-2]";
 
 %%Rotation Method - Arbitrary Axis
-smiData.RigidTransform(22).translation = [-0.4526744762576862 0.89878757594673808 1003.5000000000076];  % mm
-smiData.RigidTransform(22).angle = 0;  % rad
-smiData.RigidTransform(22).axis = [0 0 0];
-smiData.RigidTransform(22).ID = "AssemblyGround[Ensamblaje_Helices-1:Eje Helices-1]";
+smiData.RigidTransform(22).translation = [-7.1276744762571731 -0.40121242405326102 1003.5000000000074];  % mm
+smiData.RigidTransform(22).angle = 3.1415926535897931;  % rad
+smiData.RigidTransform(22).axis = [0.24397470388441672 0 0.96978159596092106];
+smiData.RigidTransform(22).ID = "AssemblyGround[Ensamblaje_Helices-1:Helice-1]";
 
 %%Rotation Method - Arbitrary Axis
-smiData.RigidTransform(23).translation = [-7.1276744762575621 -0.40121242405326102 1003.5000000000074];  % mm
-smiData.RigidTransform(23).angle = 3.1415926535897931;  % rad
-smiData.RigidTransform(23).axis = [0.2439747038844168 0 0.96978159596092106];
-smiData.RigidTransform(23).ID = "AssemblyGround[Ensamblaje_Helices-1:Helice-1]";
+smiData.RigidTransform(23).translation = [-0.45267447625763069 0.89878757594673808 1003.5000000000074];  % mm
+smiData.RigidTransform(23).angle = 0;  % rad
+smiData.RigidTransform(23).axis = [0 0 0];
+smiData.RigidTransform(23).ID = "AssemblyGround[Ensamblaje_Helices-1:Eje Helices-1]";
 
 %%Rotation Method - Arbitrary Axis
 smiData.RigidTransform(24).translation = [-15.640872479823292 -10.087312223849535 1129.1640003778364];  % mm
@@ -165,22 +165,22 @@ smiData.Solid(3).opacity = 0.0;
 smiData.Solid(3).ID = "";
 
 %%Visual Properties - Simple
-smiData.Solid(1).mass = 0.00036938306493591145;  % kg
-smiData.Solid(1).CoM = [0.52706456414497826 -0.12009310714093256 17.318357335781151];  % mm
-smiData.Solid(1).MoI = [0.0721456802628586 0.075067887952965803 0.0031580440177815887];  % kg*mm^2
-smiData.Solid(1).PoI = [0.00061162408699850157 -0.00042218241941129888 0.00036027596304922507];  % kg*mm^2
+smiData.Solid(1).mass = 0.00032937014272798123;  % kg
+smiData.Solid(1).CoM = [0 -1.5311025987424376 0];  % mm
+smiData.Solid(1).MoI = [0.0025338395850300088 0.010264933278091973 0.010395331424570768];  % kg*mm^2
+smiData.Solid(1).PoI = [0 0 0];  % kg*mm^2
 smiData.Solid(1).color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
 smiData.Solid(1).opacity = 1;
-smiData.Solid(1).ID = "Helice*:*Predeterminado";
+smiData.Solid(1).ID = "Eje Helices*:*Predeterminado";
 
 %%Visual Properties - Simple
-smiData.Solid(2).mass = 0.00032937014272798123;  % kg
-smiData.Solid(2).CoM = [0 -1.5311025987424376 0];  % mm
-smiData.Solid(2).MoI = [0.0025338395850300088 0.010264933278091973 0.010395331424570768];  % kg*mm^2
-smiData.Solid(2).PoI = [0 0 0];  % kg*mm^2
+smiData.Solid(2).mass = 0.00036938306493591145;  % kg
+smiData.Solid(2).CoM = [0.52706456414497826 -0.12009310714093256 17.318357335781151];  % mm
+smiData.Solid(2).MoI = [0.0721456802628586 0.075067887952965803 0.0031580440177815887];  % kg*mm^2
+smiData.Solid(2).PoI = [0.00061162408699850157 -0.00042218241941129888 0.00036027596304922507];  % kg*mm^2
 smiData.Solid(2).color = [0.792156862745098 0.81960784313725488 0.93333333333333335];
 smiData.Solid(2).opacity = 1;
-smiData.Solid(2).ID = "Eje Helices*:*Predeterminado";
+smiData.Solid(2).ID = "Helice*:*Predeterminado";
 
 %%Visual Properties - Simple
 smiData.Solid(3).mass = 0.14014093883889436;  % kg
@@ -206,13 +206,13 @@ smiData.RevoluteJoint(2).ID = "[Helice-1:-:Eje Helices-1]";
 smiData.RevoluteJoint(3).Rz.Pos = 155.19244527314251;  % deg
 smiData.RevoluteJoint(3).ID = "[Eje Helices-1:-:Helice-2]";
 
-smiData.RevoluteJoint(4).Rz.Pos = 81.084585838248842;  % deg
+smiData.RevoluteJoint(4).Rz.Pos = 0;  % deg
 smiData.RevoluteJoint(4).ID = "[DronPiojo-1:-:Eje Helices-2]";
 
-smiData.RevoluteJoint(5).Rz.Pos = 90.214136139552906;  % deg
+smiData.RevoluteJoint(5).Rz.Pos = -28.242500039814253;  % deg
 smiData.RevoluteJoint(5).ID = "[Helice-3:-:Eje Helices-2]";
 
-smiData.RevoluteJoint(6).Rz.Pos = -123.72296888860859;  % deg
+smiData.RevoluteJoint(6).Rz.Pos = 155.19244527314251;  % deg
 smiData.RevoluteJoint(6).ID = "[Eje Helices-2:-:Helice-4]";
 
 smiData.RevoluteJoint(7).Rz.Pos = -4.9804374191011602;  % deg
@@ -224,6 +224,6 @@ smiData.RevoluteJoint(8).ID = "[Helice-5:-:Eje Helices-3]";
 smiData.RevoluteJoint(9).Rz.Pos = 150.21200785404136;  % deg
 smiData.RevoluteJoint(9).ID = "[Eje Helices-3:-:Helice-6]";
 
-smiData.RevoluteJoint(10).Rz.Pos = -26.575488060368588;  % deg
+smiData.RevoluteJoint(10).Rz.Pos = 101.18708289477898;  % deg
 smiData.RevoluteJoint(10).ID = "[DronPiojo-1:-:Ensamblaje_Helices-1]";
 
