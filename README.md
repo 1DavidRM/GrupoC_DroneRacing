@@ -11,13 +11,13 @@
 ### Ingeniería Inversa
 En la parte de Ingeniería Mecánica se llevó a cabo un proceso de ingeniería inversa sobre un dron KE88 de la marca Kiwo, el cual fue adquirido para su análisis. Primero se realizó el desarme del equipo para identificar y extraer los componentes internos, lo que permitió comprender su estructura y funcionamiento. Posteriormente, dentro del trabajo asignado a la ingeniería mecánica, se modelaron en SolidWorks las distintas piezas del dron, desde las hélices hasta la carcasa, con el objetivo de recrear de forma precisa el diseño original. Este proceso permitió obtener un mejor conocimiento del sistema mecánico del dron, así como de la relación entre sus componentes y su funcionamiento general.
 #### 1. Desarmado del drón:
-<img src="Solid_IngInversa/Imagenes/DesarmadoTodo.jpeg" width="40" alt="Desarmado Todo">
+<img src="Solid_IngInversa/Imagenes/DesarmadoTodo.jpeg" width="100" alt="Desarmado Todo">
 
 #### 2. Medición de piezas:
-<img src="Solid_IngInversa/Imagenes/MedicionHelices.jpeg" width="40" alt="MedicionHelices">
+<img src="Solid_IngInversa/Imagenes/MedicionHelices.jpeg" width="100" alt="MedicionHelices">
 
 #### 3. Modelado de piezas:
-<img src="Solid_IngInversa/Imagenes/ModeladoEnsambleHelices.png" width="70" alt="ModeladoEnsambleHelices">
+<img src="Solid_IngInversa/Imagenes/ModeladoEnsambleHelices.png" width="100" alt="ModeladoEnsambleHelices">
 
 ### Modelado de Dron
 Hacemos un modelo báse para subirlo al modelado de Matlab
