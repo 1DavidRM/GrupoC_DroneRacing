@@ -38,3 +38,7 @@ codegen/
 # SimBiology backup files
 *.sbproj.backup
 *.sbproj.bak
+
+# ESP-IDF build artifacts
+ESPNOW/IDF/**/build/
+ESPNOW/IDF/**/.cache/
