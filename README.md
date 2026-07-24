@@ -17,7 +17,9 @@ En la parte de Ingeniería Mecánica se llevó a cabo un proceso de ingeniería 
 <img src="Solid_IngInversa/Imagenes/MedicionHelices.jpeg" width="100" alt="MedicionHelices">
 
 #### 3. Modelado de piezas:
-<img src="Solid_IngInversa/Imagenes/ModeladoEnsambleHelices.png" width="100" alt="ModeladoEnsambleHelices">
+<img src="Solid_IngInversa/Imagenes/ModeladoEnsambleHelices.png" width="200" alt="ModeladoEnsambleHelices">
+
+
 
 ### Modelado de Dron
 Hacemos un modelo báse para subirlo al modelado de Matlab
