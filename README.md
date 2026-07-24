@@ -39,8 +39,6 @@ Este modelo base en Simulink es fundamental, ya que nos permitirá inyectar señ
 
 <img src="multibodyDron.png" width="200" alt="Diagrama de bloques Simscape">
 <img src="simulinkDron.png" width="200" alt="Simulación">
-### Modelado de Dron
-Hacemos un modelo báse para subirlo al modelado de Matlab
 
 ## Ingeniería Software
 
