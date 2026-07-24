@@ -28,17 +28,17 @@ El proceso de integración consistió en los siguientes pasos:
 1. **Exportación desde SolidWorks:** Utilizando el plugin *Simscape Multibody Link*, exportamos el ensamblaje completo. Este proceso extrae automáticamente las propiedades físicas del modelo CAD (masa, centro de gravedad, momentos de inercia de cada pieza) y genera un archivo `.xml` junto con las geometrías tridimensionales asociadas.
 2. **Importación a MATLAB:** A través del comando `smimport` en la ventana de comandos de MATLAB, leímos el archivo `.xml` generado previamente. 
 3. **Generación del Diagrama de Bloques:** Simulink interpretó la información y construyó de forma automática el diagrama de bloques del sistema multicuerpo. 
-
+<img src="Solid_IngInversa/Imagenes/simulinkDron.png" width="200" alt="Simulación">
 **Estructura del modelo en Simscape:**
 El diagrama resultante traduce fielmente las relaciones mecánicas del dron:
 * **Sólidos (Rigid Solids):** Representan el chasis principal y cada una de las hélices, conservando la masa y geometría real del dron.
 * **Articulaciones (Revolute Joints):** Las relaciones de posición (mates) creadas en SolidWorks se transformaron en juntas de revolución, las cuales representan el eje de giro de cada uno de los 4 motores, permitiendo el movimiento independiente de cada hélice.
 * **Marco de Referencia:** El sistema cuenta con un bloque de configuración de mecanismo que define las leyes de la física (como la gravedad) sobre las cuales interactuará el dron durante las pruebas.
+<img src="Solid_IngInversa/Imagenes/multibodyDron.png" width="200" alt="Diagrama de bloques Simscape">
 
 Este modelo base en Simulink es fundamental, ya que nos permitirá inyectar señales a los motores, simular el comportamiento en vuelo y probar los algoritmos de control (PID) antes de implementarlos en el hardware físico.
 
-<img src="Solid_IngInversa/Imagenes/multibodyDron.png" width="200" alt="Diagrama de bloques Simscape">
-<img src="Solid_IngInversa/Imagenes/simulinkDron.png" width="200" alt="Simulación">
+
 
 ## Ingeniería Software
 
