@@ -37,8 +37,8 @@ El diagrama resultante traduce fielmente las relaciones mecánicas del dron:
 
 Este modelo base en Simulink es fundamental, ya que nos permitirá inyectar señales a los motores, simular el comportamiento en vuelo y probar los algoritmos de control (PID) antes de implementarlos en el hardware físico.
 
-<img src="Solid_IngInversa/Imagenes/multibodyDron.png" width="200" alt="Solid_IngInversa/Imagenes/Diagrama de bloques Simscape">
-<img src="simulinkDron.png" width="200" alt="Simulación">
+<img src="Solid_IngInversa/Imagenes/multibodyDron.png" width="200" alt="Diagrama de bloques Simscape">
+<img src="Solid_IngInversa/Imagenes/simulinkDron.png" width="200" alt="Simulación">
 
 ## Ingeniería Software
 
