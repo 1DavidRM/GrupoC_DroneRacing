@@ -6,5 +6,7 @@
     "--background-index",
     "--query-driver=**",
     "--compile-commands-dir=c:\\Users\\jupas\\OneDrive\\JP\\Teoria de control 1\\GrupoC_DroneRacing\\ESPNOW\\IDF\\Control\\build"
-  ]
+  ],
+  "idf.portWin": "COM3",
+  "idf.flashType": "UART"
 }
