@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <strings.h>
 #include <stdlib.h>
 #include <fcntl.h>
 #include "freertos/FreeRTOS.h"
@@ -8,106 +9,95 @@
 #include "esp_now.h"
 #include "esp_event.h"
 #include "esp_netif.h"
-#include "esp_timer.h"
 #include "nvs_flash.h"
 #include "esp_log.h"
 
 static const char *TAG = "CONTROL";
 
-// MAC del receptor (el ESP32 en el dron)
-static uint8_t macReceptora[] = {0x78, 0x42, 0x1c, 0x6c, 0xc9, 0xf8};
+// MAC del ESP32 esclavo (el que trae los motores) -- AJUSTAR con la MAC real
+static uint8_t macEsclavo[] = {78, 0x42, 0x1c, 0x6c, 0xc9, 0xf8};
+
+#define LED_AZUL_PIN GPIO_NUM_2
 
 typedef struct {
-    float matriz[4]; // [0]=j1y, [1]=j1x, [2]=j2y, [3]=j2x
-} struct_mensaje;
+    int velocidad; // 0-255
+} struct_comando;
 
-static struct_mensaje misDatos;
+static struct_comando comando;
+static int velocidadGlobal = 0;
 
-static int64_t ultimoDatoSerial = 0;
-static bool failsafeYaEnviado = false;
-#define FAILSAFE_MS 500
-
-// Callback de envío — igual que en Arduino, no hacemos nada con el status
 static void onDataSent(const wifi_tx_info_t *tx_info, esp_now_send_status_t status) {
     (void) tx_info;
     (void) status;
 }
 
-static void wifi_espnow_init(void) {
-    ESP_ERROR_CHECK(nvs_flash_init());
+static void enviarComando(void) {
+    comando.velocidad = velocidadGlobal;
+    esp_now_send(macEsclavo, (uint8_t *) &comando, sizeof(comando));
+    ESP_LOGI(TAG, "Enviado -> velocidad: %d", velocidadGlobal);
+}
+
+// ---------- ESP-NOW (sin conectarse a ningun router) ----------
+static void espnow_init(void) {
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
-    ESP_ERROR_CHECK(esp_wifi_start());
+    ESP_ERROR_CHECK(esp_wifi_start()); // WiFi arriba pero sin unirse a ninguna red
 
     ESP_ERROR_CHECK(esp_now_init());
     ESP_ERROR_CHECK(esp_now_register_send_cb(onDataSent));
 
     esp_now_peer_info_t peerInfo = {0};
-    memcpy(peerInfo.peer_addr, macReceptora, 6);
+    memcpy(peerInfo.peer_addr, macEsclavo, 6);
     peerInfo.channel = 0;
     peerInfo.encrypt = false;
     ESP_ERROR_CHECK(esp_now_add_peer(&peerInfo));
 }
 
-static int64_t millis(void) {
-    return esp_timer_get_time() / 1000;
+// ---------- Interfaz por Serial ----------
+// Acepta: un numero directo (0-255), o los comandos "up", "down", "max", "off"
+static void procesar_linea(char *linea) {
+    linea[strcspn(linea, "\r\n")] = 0; // quita el salto de linea
+    if (strlen(linea) == 0) return;
+
+    if (strcasecmp(linea, "off") == 0) {
+        velocidadGlobal = 0;
+    } else if (strcasecmp(linea, "max") == 0) {
+        velocidadGlobal = 255;
+    } else if (strcasecmp(linea, "up") == 0) {
+        velocidadGlobal = (velocidadGlobal + 5 > 255) ? 255 : velocidadGlobal + 5;
+    } else if (strcasecmp(linea, "down") == 0) {
+        velocidadGlobal = (velocidadGlobal - 5 < 0) ? 0 : velocidadGlobal - 5;
+    } else {
+        int val = atoi(linea);
+        if (val < 0) val = 0;
+        if (val > 255) val = 255;
+        velocidadGlobal = val;
+    }
+
+    enviarComando();
 }
 
 static void control_task(void *arg) {
-    // Clave: ponemos stdin en modo no-bloqueante.
-    // Sin esto, fgets() se queda esperando un '\n' y el failsafe nunca corre a tiempo.
+    // Stdin no-bloqueante: si no hay linea nueva, el while sigue sin trabarse
     fcntl(fileno(stdin), F_SETFL, O_NONBLOCK);
+    char linea[32];
 
-    char linea[64];
-    ultimoDatoSerial = millis(); // evita un falso failsafe justo al arrancar
+    ESP_LOGI(TAG, "Listo. Escribe un numero 0-255, o 'up' / 'down' / 'max' / 'off' y Enter.");
 
     while (1) {
-        char *res = fgets(linea, sizeof(linea), stdin);
-
-        if (res != NULL) {
-            float valores[4];
-            int i = 0;
-            char *rest = linea;
-            char *token;
-
-            while (i < 4 && (token = strtok_r(rest, ",\n", &rest)) != NULL) {
-                valores[i++] = atof(token);
-            }
-
-            if (i == 4) {
-                misDatos.matriz[0] = valores[0];
-                misDatos.matriz[1] = valores[1];
-                misDatos.matriz[2] = valores[2];
-                misDatos.matriz[3] = valores[3];
-
-                esp_now_send(macReceptora, (uint8_t *) &misDatos, sizeof(misDatos));
-
-                ultimoDatoSerial = millis();
-                failsafeYaEnviado = false; // se rearma para la próxima pérdida de señal
-            }
-        } else {
-            // No llegó nada nuevo por serial — checa si ya se cumplió el timeout
-            if ((millis() - ultimoDatoSerial > FAILSAFE_MS) && !failsafeYaEnviado) {
-                misDatos.matriz[0] = -1.0f; // Throttle -> 0% (motores apagados)
-                misDatos.matriz[1] = 0.0f;  // Yaw nivelado
-                misDatos.matriz[2] = 0.0f;  // Pitch nivelado
-                misDatos.matriz[3] = 0.0f;  // Roll nivelado
-
-                esp_now_send(macReceptora, (uint8_t *) &misDatos, sizeof(misDatos));
-                failsafeYaEnviado = true;
-                ESP_LOGW(TAG, "Failsafe enviado");
-            }
+        if (fgets(linea, sizeof(linea), stdin) != NULL) {
+            procesar_linea(linea);
         }
-
-        vTaskDelay(pdMS_TO_TICKS(10)); // evita que la tarea acapare el CPU
+        vTaskDelay(pdMS_TO_TICKS(20));
     }
 }
 
 void app_main(void) {
-    wifi_espnow_init();
+    ESP_ERROR_CHECK(nvs_flash_init());
+    espnow_init();
     xTaskCreate(control_task, "control_task", 4096, NULL, 5, NULL);
 }
