@@ -9,7 +9,7 @@ Los principales bloques implementados fueron:
 - **Control**, donde se implementó un controlador PID para mejorar la estabilidad del sistema.
 - **Dinámica física**, responsable de calcular trayectorias, fuerzas, torques y ángulos considerando los efectos de la gravedad.
 - **Visualización**, donde se representa gráficamente el movimiento del dron mediante un modelo tridimensional.
-<img src="Solid_IngInversa/Imagenes/MATLAB Diagrama de bloques.png" width="100" alt="Diagrama Modelado">
+<img src="Solid_IngInversa/Imagenes/MATLAB Diagrama de bloques.png" width="250" alt="Diagrama Modelado">
 
 ### Interfaz
 
@@ -17,7 +17,7 @@ En el bloque de **Entrada** se implementaron dos formas de controlar el dron:
 
 - **Desde la computadora**, ejecutando el programa `Mando.m`.
 - **Mediante un control de Xbox**, conectado a la computadora. MATLAB reconoce automáticamente el dispositivo, permitiendo utilizarlo como método de control del dron.
-<img src="Solid_IngInversa/Imagenes/MATLAB Interfaz.png" width="100" alt="Interfaz">
+<img src="Solid_IngInversa/Imagenes/MATLAB Interfaz.png" width="250" alt="Interfaz">
 
 ### Control PID
 
@@ -28,14 +28,14 @@ Este bloque recibe las señales provenientes del dispositivo de control, las pro
 La misma lógica de control fue utilizada posteriormente en el dron físico, donde el controlador emplea la información proporcionada por la **MPU** para realizar correcciones en tiempo real y mantener una mayor estabilidad durante el vuelo.
 
 Durante el desarrollo se realizaron múltiples ajustes a las constantes del controlador PID con el objetivo de obtener la mejor respuesta posible del sistema.
-<img src="Solid_IngInversa/Imagenes/MATLAB Control.png" width="100" alt="Bloque Control">
+<img src="Solid_IngInversa/Imagenes/MATLAB Control.png" width="250" alt="Bloque Control">
 
 ### Dinámica
 
 El bloque de **Dinámica** está compuesto por diferentes subsistemas encargados de calcular las fuerzas y torques que actúan sobre el sistema de referencia del dron.
 
 Además, se implementó un bloque para considerar el efecto de la **gravedad**, el cual se encuentra retroalimentado por el bloque **6DOF (Seis Grados de Libertad)**. Este bloque es el responsable de calcular la trayectoria, la posición y la orientación del dron a partir de la dinámica del sistema.
-<img src="Solid_IngInversa/Imagenes/MATLAB Dinamica Fisica.png" width="100" alt="Bloque Dinamica">
+<img src="Solid_IngInversa/Imagenes/MATLAB Dinamica Fisica.png" width="250" alt="Bloque Dinamica">
 
 ### Visualización
 
@@ -46,7 +46,7 @@ En esta interfaz se representa:
 - La trayectoria recorrida por el dron.
 - La orientación del vehículo durante la simulación.
 - Un modelo tridimensional del dron desarrollado en **SolidWorks** e importado en formato **STL**.
-<img src="Solid_IngInversa/Imagenes/MATLAB Visualizacion.png" width="100" alt="Bloque Visualizacion">
+<img src="Solid_IngInversa/Imagenes/MATLAB Visualizacion.png" width="250" alt="Bloque Visualizacion">
 
 ## Ingeniería Comunicaciones
 
